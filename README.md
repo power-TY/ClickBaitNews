@@ -1,9 +1,9 @@
 # ClickBaitNews
 **ClickBaitNews Classification And Generate News Title\
 팀원: 김효민, 이예진, 정태영\
-프로젝트 기간 : 23.5.4~6.12**\\
+프로젝트 기간 : 23.5.4~6.12**\
 
-**분석 데이터 : AI Hub 데이터 셋 이용** https://www.aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&dataSetSn=71338
+**분석 데이터 : AI Hub 데이터 셋 이용** https://www.aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&dataSetSn=71338\
 **Train data: 233,166개**\
 **Valid data: 58,292개**\
 **Test data: 36,422개**
@@ -28,5 +28,8 @@
 
 뉴스의 제목과 본문을 분리하여 낚시성 기사인지 아닌지 판단하는 Clickbait Classification 모델에 넣어 낚시성 기사인지 아닌지를 먼저 파악함.\
 만약 낚시성 기사라고 판단이 된다면 본문의 내용을 바탕으로 제목을 생성하는 New Title Generation 모델에 넣어 새로운 제목을 만들고, 실제 참 제목과의 유사도를 통해 새로운 제목을 평가함.\
+
+# 낚시성 기사 분류 모델 예측 과정
+![image](https://github.com/user-attachments/assets/a38dd7d9-5ad6-4d49-9ab9-a58f6db685f2)
 
 
