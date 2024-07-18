@@ -1,5 +1,6 @@
 # ClickBaitNews
-**ClickBaitNews Classification And Generate News Title\
+**ClickBaitNews Classification And Generate News Title**\
+**낚시성 기사 탐지 및 새로운 제목 생성**\
 팀원: 김효민, 이예진, 정태영\
 프로젝트 기간 : 23.5.4~6.12**
 
@@ -32,9 +33,9 @@
 
 # 낚시성 기사 분류 모델 예측 과정
 ![image](https://github.com/user-attachments/assets/a38dd7d9-5ad6-4d49-9ab9-a58f6db685f2)
-낚시성 기사를 분류하는데는 Sentence-BERT를 이용함.\
+낚시성 기사를 분류하는데는 Sentence-BERT를 fine-tuning 후 이용함.\
 Sentence A 에는 전처리된 제목을 B에는 전처리된 본문을 넣어 각각 임베딩을 진행.\
-제목이 본문의 내용을 잘 담고 있다면 각 벡터간 유사도 높을거라 판단.
+제목이 본문의 내용을 잘 담고 있다면 각 벡터간 유사도가 높을거라 판단.
 
 1. Data : 낚시성/ 비낚시성 제목, 본문, Label 
 2. PreTrained BERT : klue/roberta-base
@@ -49,5 +50,17 @@ OnlineContrastive Loss의 성능이 비슷하지만 조금 더 좋아 해당 경
 
 # 제목 생성 모델 생성 과정
 ![image](https://github.com/user-attachments/assets/9908fa5b-cafd-410a-b945-c472d6968971)
+본문의 내용을 잘 담고 있고 요약하는 것이 제목을 대체할 수 있다고 생각.\
+단, 제목의 경우 2개의 KOBART 모델을 fine-tuning 후 이용해 제목을 생성함
+- 본문 전체의 내용을 1개의 모델로 요약할 경우 뉴스 기사의 제목인 헤드라인 형태가 아닌 줄글 형태로 나오는 것을 고려함.\
+- 따라서, 1차 모델로 본문의 내용을 요약하고 요약한 핵심내용을 바탕으로 2차 모델을 이용해 제목을 생성함.\
+- 분류와 마찬가지로 실제 참 제목과 생성한 새로운 제목간의 유사도를 바탕으로 평가함.
+
+1. Data :비낚시성 기사의 제목, 기사본문 요약문 
+2. PreTrained KOBART : gogamza/kobart-base-v2
+3. evaluation : 코사인 유사도, 맨하탄 유사도, ROUGE-1, ROUGE-L
+
+# 생성 모델 성능평가 
+![image](https://github.com/user-attachments/assets/b3dfc456-b0b9-4df7-b2ab-2c7efbb65384)
 
 
