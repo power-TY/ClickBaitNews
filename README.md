@@ -1,11 +1,12 @@
 # ClickBaitNews
 **ClickBaitNews Classification And Generate News Title\
 팀원: 김효민, 이예진, 정태영\
-프로젝트 기간 : 23.5.4~6.12**\
+프로젝트 기간 : 23.5.4~6.12**\\
+
 **분석 데이터 : AI Hub 데이터 셋 이용** https://www.aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&dataSetSn=71338
 **Train data: 233,166개**\
 **Valid data: 58,292개**\
-**Test data: 36,422개**\
+**Test data: 36,422개**
 
 
 # 프로젝트 선정 이유
