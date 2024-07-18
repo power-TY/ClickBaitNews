@@ -11,8 +11,7 @@
 
 
 # 프로젝트 선정 이유
-![image](https://github.com/user-attachments/assets/21ac178e-4ab1-4f3e-b8dd-949c7c57f4f3)
-![image](https://github.com/user-attachments/assets/fdb4fd94-f9ca-4406-b0a8-bccc8c0c1a07)
+![image](https://github.com/user-attachments/assets/3c959eb4-bf07-4bf8-bf4e-05005c78e6ec)
 ![image](https://github.com/user-attachments/assets/752e22ab-6497-4fcd-a074-4fc53e3f4d88)
 
 위 이미지처럼 많은 인터넷 뉴스 기사의 제목이 클릭을 유도하는 낚시성 기사인 것을 알 수 있음.\
