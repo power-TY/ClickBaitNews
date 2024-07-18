@@ -48,7 +48,6 @@ OnlineContrastive Loss의 성능이 비슷하지만 조금 더 좋아 해당 경
 **유사도 계산방식을 어떤식으로 하더라도 해당 모델을 통한 분류 결과 Accuracy, F1 등 다양한 평가지표에서 정확도가 높은 것을 알 수 있음.**
 
 # 제목 생성 모델 생성 과정
-![image](https://github.com/user-attachments/assets/529db12b-e02e-4265-98f1-3978c67256bf)
-
+![image](https://github.com/user-attachments/assets/9908fa5b-cafd-410a-b945-c472d6968971)
 
 
